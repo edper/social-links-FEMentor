@@ -37,6 +37,7 @@ header, main {
     width:90px;
     height:90px;
     border-radius: 80%;
+    border:1px solid #CEEC67;
 }
 
 .avatar > img:hover {
@@ -76,12 +77,26 @@ header, main {
     font-size:0.9rem;
     background-color: #333333;
     border-radius: 10px;
+    transition: box-shadow 0.5s;
 }
+
+
+.social-box > i {
+    margin-right:10px;
+}
+
+.social-box > img {
+    width:20px;
+    height:20px;
+    margin-right:10px;
+}
+
 
 .social-box:hover {
     cursor: pointer;
     background-color: rgba(51, 51, 51,0.4);
     outline: 1px lightgray solid;
+    box-shadow:2px 1px 5px rgba(255,255,255,0.5);
 }
 
 .social-box > a {
