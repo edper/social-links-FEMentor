@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
+    src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
 * {
     margin:0;
     padding:0;
@@ -7,8 +17,8 @@
 body {
     height:100vh;
     width:100vw;
+    font-family: 'Inter';
     background-color: #141414;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:white;
 }
 
@@ -72,12 +82,33 @@ header, main {
     width:300px;
     height:40px;
     padding:10px;
-    text-align: center;
     font-weight: bold;
     font-size:0.9rem;
-    background-color: #333333;
     border-radius: 10px;
     transition: box-shadow 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.github {
+    background-color: #323232;
+}
+
+.fementor {
+    background-color: #4F5DA2;
+}
+
+.stackoverflow {
+    background-color: #EF7B0D;
+}
+
+.linkedin {
+    background-color: #0273B4;
+}
+
+.twitter {
+    background-color: #000000;
 }
 
 
@@ -94,7 +125,7 @@ header, main {
 
 .social-box:hover {
     cursor: pointer;
-    background-color: rgba(51, 51, 51,0.4);
+    opacity: 0.9;
     outline: 1px lightgray solid;
     box-shadow:2px 1px 5px rgba(255,255,255,0.5);
 }
@@ -102,5 +133,12 @@ header, main {
 .social-box > a {
     color:white;
     text-decoration: none;
+    flex-basis: 250px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-box > i, .social-box > img {
+    flex-basis: 50px;
 }
 
